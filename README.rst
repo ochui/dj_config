@@ -10,7 +10,6 @@ This library provides:
 
 -  Settings configuration (Static files / WhiteNoise).
 -  Logging configuration.
--  Test runner (important for `Heroku CI <https://www.heroku.com/continuous-integration>`_).
 
 --------------
 
@@ -23,8 +22,8 @@ In ``settings.py``, at the very bottom::
 
     …
     # Configure Django App for Heroku.
-    import django_heroku
-    django_heroku.settings(locals())
+    import django_xconfig
+    django_xconfig.settings(locals())
 
 This will automatically configure ``DATABASE_URL``, ``ALLOWED_HOSTS``, WhiteNoise (for static assets), Logging, and Heroku CI for your application.
 
@@ -36,15 +35,7 @@ Disabling Functionality
 ``settings()`` also accepts keyword arguments that can be passed ``False`` as a value, which will disable automatic configuration for their specific areas of responsibility:
 
 - ``databases``
-- ``test_runner``
 - ``staticfiles``
 - ``allowed_hosts``
 - ``logging``
 - ``secret_key``
-
------------------------
-
-You can also just use this library to provide a test runner for your Django application, for use on Heroku CI::
-
-    import django_heroku
-    TEST_RUNNER = 'django_heroku.HerokuDiscoverRunner'

@@ -12,11 +12,11 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'django-heroku'
+NAME = 'django-xconfig'
 DESCRIPTION = 'This is a Django library for Heroku apps.'
-URL = 'https://github.com/heroku/django-heroku'
-EMAIL = 'kreitz@salesforce.com'
-AUTHOR = 'Kenneth Reitz'
+URL = 'https://github.com/ochui/django-xconfig'
+EMAIL = 'ochui.princewill@gmail.com'
+AUTHOR = 'Ochui Princewill'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -37,7 +37,7 @@ with io.open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 # Load the package's __version__.py module as a dictionary.
 about = {}
-with open(os.path.join(here, 'django_heroku', '__version__.py')) as f:
+with open(os.path.join(here, 'django_xconfig', '__version__.py')) as f:
     exec(f.read(), about)
 
 
