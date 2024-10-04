@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5c2ff8a8aee621cb843fe1ded071949239df3c414404c22294e0155c2c12006c"
+            "sha256": "7aa775805f22908213207bcb9e37b1a145e632fe03490835f900f87a0473ba7d"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -22,6 +22,14 @@
             ],
             "markers": "python_version >= '3.8'",
             "version": "==3.8.1"
+        },
+        "autocommand": {
+            "hashes": [
+                "sha256:710afe251075e038e19e815e25f8155cabe02196cfb545b2185e0d9c8b2b0459",
+                "sha256:878de9423c5596491167225c2a455043c3130fb5b7286ac83443d45e74955f34"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==2.2.2"
         },
         "certifi": {
             "hashes": [
@@ -299,6 +307,13 @@
             "markers": "python_version >= '3.8'",
             "version": "==3.4.0"
         },
+        "jaraco.collections": {
+            "hashes": [
+                "sha256:0e4829409d39ad18a40aa6754fee2767f4d9730c4ba66dc9df89f1d2756994c2",
+                "sha256:a9480be7fe741d34639b3c32049066d7634b520746552d1a5d0fcda07ada1020"
+            ],
+            "version": "==5.1.0"
+        },
         "jaraco.context": {
             "hashes": [
                 "sha256:9bae4ea555cf0b14938dc0aee7c9f32ed303aa20a3b73e7dc80111628792d1b3",
@@ -314,6 +329,13 @@
             ],
             "markers": "python_version >= '3.8'",
             "version": "==4.1.0"
+        },
+        "jaraco.text": {
+            "hashes": [
+                "sha256:08de508939b5e681b14cdac2f1f73036cd97f6f8d7b25e96b8911a9a428ca0d1",
+                "sha256:5b71fecea69ab6f939d4c906c04fee1eda76500d1641117df6ec45b865f10db0"
+            ],
+            "version": "==4.0.0"
         },
         "jeepney": {
             "hashes": [
@@ -391,6 +413,13 @@
             ],
             "markers": "python_version >= '3.6'",
             "version": "==1.10.0"
+        },
+        "platformdirs": {
+            "hashes": [
+                "sha256:357fb2acbc885b0419afd3ce3ed34564c13c9b95c89360cd9563f73aa5e2b907",
+                "sha256:73e575e1408ab8103900836b97580d5307456908a03e92031bab39e4554cc3fb"
+            ],
+            "version": "==4.3.6"
         },
         "pluggy": {
             "hashes": [
@@ -482,6 +511,17 @@
             "markers": "sys_platform == 'linux'",
             "version": "==3.3.3"
         },
+        "setuptools": {
+            "extras": [
+                "core"
+            ],
+            "hashes": [
+                "sha256:35ab7fd3bcd95e6b7fd704e4a1539513edad446c097797f2985e0e4b960772f2",
+                "sha256:d59a21b17a275fb872a9c3dae73963160ae079f1049ed956880cd7c09b120538"
+            ],
+            "markers": "python_version >= '3.8'",
+            "version": "==75.1.0"
+        },
         "sqlparse": {
             "hashes": [
                 "sha256:773dcbf9a5ab44a090f3441e2180efe2560220203dc2f8c0b0fa141e18b505e4",
@@ -514,6 +554,13 @@
             ],
             "markers": "python_version >= '3.8'",
             "version": "==2.2.3"
+        },
+        "wheel": {
+            "hashes": [
+                "sha256:2376a90c98cc337d18623527a97c31797bd02bad0033d41547043a1cbfbe448f",
+                "sha256:a29c3f2817e95ab89aa4660681ad547c0e9547f20e75b0562fe7723c9a2a9d49"
+            ],
+            "version": "==0.44.0"
         },
         "whitenoise": {
             "hashes": [

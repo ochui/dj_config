@@ -1,16 +1,11 @@
 [[source]]
-
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
-
 [packages]
 
-
-
 [dev-packages]
-
 pytest = "*"
 django = "*"
 dj-database-url = "*"
@@ -18,3 +13,4 @@ whitenoise = "*"
 gunicorn = "*"
 python-dotenv = "*"
 twine = "*"
+setuptools = {extras = ["core"], version = "*"}
