@@ -13,13 +13,17 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 
 import sys
+from dotenv import load_dotenv
+
 
 # Hack for running app directly.
 sys.path.insert(0, os.path.abspath('..'))
 # Hack for tests. 
 sys.path.insert(0, os.path.abspath('.'))
 
-import django_xconfig
+import dj_config
+
+load_dotenv()
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -129,4 +133,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-django_xconfig.settings(locals())
+dj_config.settings(locals())

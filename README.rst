@@ -1,8 +1,8 @@
-Django-Heroku (Python Library)
+dj_config (Python Library)
 ==============================
-
-.. image:: https://travis-ci.org/heroku/django-heroku.svg?branch=master
-    :target: https://travis-ci.org/heroku/django-heroku
+.. image:: https://img.shields.io/pypi/v/dj-config.svg
+    :target: https://pypi.python.org/pypi/dj-config
+    :alt: Latest Version
 
 This is a Django library for Heroku applications that ensures a seamless deployment and development experience.
 
@@ -13,16 +13,18 @@ This library provides:
 
 --------------
 
-Django 2.0 is targeted, but older versions of Django should be compatible. Only Python 3 is supported.
+Django 4.0 is targeted, but older versions of Django should be compatible.
 
-Usage of Django-Heroku
+Usage of dj_config
 ----------------------
 
 In ``settings.py``, at the very bottom::
 
     …
     # Configure Django App for Heroku.
-    import django_xconfig
+    import dj_config
+    from dotenv import load_dotenv
+    load_dotenv()  # take environment variables
     django_xconfig.settings(locals())
 
 This will automatically configure ``DATABASE_URL``, ``ALLOWED_HOSTS``, WhiteNoise (for static assets), Logging, and Heroku CI for your application.

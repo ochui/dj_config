@@ -12,15 +12,16 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'django-xconfig'
-DESCRIPTION = 'This is a Django library for Heroku apps.'
-URL = 'https://github.com/ochui/django-xconfig'
+NAME = 'dj_config'
+DESCRIPTION = 'This is a fork of the Django library for Heroku apps.'
+URL = 'https://github.com/ochui/dj_config'
 EMAIL = 'ochui.princewill@gmail.com'
 AUTHOR = 'Ochui Princewill'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    'dj-database-url>=0.5.0', 'whitenoise', 'psycopg2', 'django'
+    'dj-database-url>=0.5.0', 'whitenoise', 'psycopg2', 'django',
+    'python-dotenv'
 ]
 
 # The rest you shouldn't have to touch too much :)
